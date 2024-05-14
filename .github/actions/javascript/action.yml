@@ -1,0 +1,7 @@
+inputs:
+  vars:
+    required: true
+  
+runs:
+  main: main.js
+  using: node20
