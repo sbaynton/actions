@@ -10,6 +10,13 @@ jobs:
     environment: ${{ inputs.environment }}
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v4
+
       - uses: ./.github/actions/setup
+
+      - uses: ./.github/actions/env
+        with:
+          vars: ${{ toJSON(vars) }}
+
       - run: echo $NAME
