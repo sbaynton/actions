@@ -1,8 +1,6 @@
 runs:
   using: composite
   steps:
-    
-    - uses: actions/checkout@v4
 
     - uses: ./.github/actions/env
       with:
