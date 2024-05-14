@@ -14,3 +14,4 @@ jobs:
       - uses: ./.github/actions/javascript
         with:
           vars: ${{ toJSON(vars) }}
+      - run: echo $NAME
